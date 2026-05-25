@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!--Header con el icono de la página y el nav-->
+<header>
+    <h1>homely</h1>
+    <nav>
+        <ul class="navlist">
+            <!--        Algunos de los links apuntan a secciones de la página para así poder hacer scroll hacia esa section-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Hero">Hero</a></li>
+            <li><a href="#HomeLayout">About</a></li>
+            <li>Gallery</li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="#ContactUs">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Botón Hamburger con un HTML entity-->
+    <!--Básicamente es el unicode de un carácter especial-->
+    <!--Este icono lo busqué en google para ponerlo, y se llama Trigram for Heaven-->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <!--Botón call to action-->
+    <button>Schedule Visit</button>
+</header>
+<main>
+    <div id="Hero">
+        <div>
+            <h1 id="HeroTitulo">Your Next Perfect and Beautiful Home for Living Today</h1>
+            <p id="HeroSubtitulo">742 Evergreen Terrace Brooklyn, NY 11201</p>
+        </div>
+        <div>
+            <p class="TextoNormal">This stunning property offers exceptional comfort, premium finishes, and a perfect
+                blend of style and
+                functionality. Whether you're starting a new chapter or looking for a spacious upgrade, this home
+                provides everything you need for elevated living in a prime neighborhood.</p>
+            <button>Schedule Visit</button>
+        </div>
+    </div>
+    <img src="Images/MinimalistHouse.jpg" alt="Casa minimalista" id="HeroImage"/>
+    <div id="HeroSubSection">
+        <div id="SubSectionText">
+            <div>
+                <p class="TextoBlanco">This exceptional residence offers refined living with generous open spaces,
+                    bright interiors, and a warm
+                    modern design that blends comfort with style. Every room is crafted to create a welcoming
+                    atmosphere, giving
+                    you the perfect setting for daily life, relaxation, and memorable moments.</p>
+            </div>
+            <div>
+                <p id="TextoVerdeSecundario">For Sale</p>
+                <h2 class="TextoBlanco" id="TextoBlancoGrande">$250,000</h2>
+            </div>
+        </div>
+        <div id="DivContainer">
+            <div class="SubSectionContainer">
+                <div id="ExpandIcon"></div>
+                <p class="TextoBlanco">1665 sqft</p>
+            </div>
+            <div class="SubSectionContainer">
+                <div id="BedIcon"></div>
+                <p class="TextoBlanco">5 Beds</p>
+            </div>
+            <div class="SubSectionContainer">
+                <div id="BathTubIcon"></div>
+                <p class="TextoBlanco">5 Baths</p>
+            </div>
+            <div class="SubSectionContainer">
+                <div id="CarIcon"></div>
+                <p class="TextoBlanco">5 Cars</p>
+            </div>
+        </div>
+    </div>
+    <div id="ImageGrid">
+        <div>
+            <div id="LivingRoomImg"><p>Living Room</p></div>
+            <div id="MasterBedroomImg"><p>Master Bedroom</p></div>
+            <div id="DinningRoomImg"><p>Dinning Room</p></div>
+            <div id="KitchenImg"><p>Kitchen</p></div>
+            <div id="BathroomImg"><p>Bathroom</p></div>
+            <div id="TerraceImg"><p>Terrace</p></div>
+        </div>
+    </div>
+    <div id="HomeLayout">
+        <div>
+            <p id="HomeLayoutSubtitulo">Discover</p>
+            <h2 id="HomeLayoutTitulo">Home Floorplans</h2>
+            <div class="FloorAreas">
+                <p>Living Room</p>
+                <p>20 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Dinning Room</p>
+                <p>15 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Kitchen</p>
+                <p>15 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Master Bedroom</p>
+                <p>16 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Kids Bedroom 1</p>
+                <p>12 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Kids Bedroom 2</p>
+                <p>12 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Bath Room</p>
+                <p>6 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Garage</p>
+                <p>40 m²</p>
+            </div>
+            <div class="FloorAreas">
+                <p>Warehouse</p>
+                <p>4 m²</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <button>Floor 1</button>
+                <button>Floor 2</button>
+            </div>
+            <img src="Images/HouseLayout.png" height="656" width="630" alt="Layout de la casa" id="LayoutImage"/>
+        </div>
+    </div>
+    <img src="Images/HouseTour.png" alt="Video Tour Casa" id="TourImage"/>
+    <div id="HomeFacilities">
+        <div>
+            <p class="TextoBlanco" id="FacilitiesSubtitulo">Home Facilities</p>
+            <div id="LifestyleFlex">
+                <h3 class="TextoBlanco" id="LifestyleText">Facilities For Lifestyle</h3>
+                <button>View More</button>
+            </div>
+            <div id="FacilitiesGrid">
+                <div class="FacilitiesImg" id="SmartHomeImg"></div>
+                <div class="FacilitiesText">
+                    <h3 class="TextoBlanco FacilitiesGridTitulo">Smart Home</h3>
+                    <p class="TextoBlanco">Experience seamless daily comfort with intuitive smart features that connect
+                        your home effortlessly and enhance modern living.</p>
+                </div>
+                <div class="FacilitiesImg" id="SolarPoweredImg"></div>
+                <div class="FacilitiesText">
+                    <h3 class="TextoBlanco FacilitiesGridTitulo">Solar Powered</h3>
+                    <p class="TextoBlanco">Generate clean renewable energy with efficient solar systems designed to
+                        lower utility costs while supporting a greener lifestyle.</p>
+                </div>
+                <div class="FacilitiesText">
+                    <h3 class="TextoBlanco FacilitiesGridTitulo">Swimming Pool</h3>
+                    <p class="TextoBlanco">Relax in a beautifully designed private pool that offers refreshing water,
+                        peaceful ambiance, and the perfect space for leisure at home.</p>
+                </div>
+                <div class="FacilitiesImg" id="SwimmingPoolImg"></div>
+                <div class="FacilitiesText">
+                    <h3 class="TextoBlanco FacilitiesGridTitulo">Home Security</h3>
+                    <p class="TextoBlanco">Protect your home with advanced security features that offer continuous
+                        monitoring, smart alerts, and peace of mind every day.</p>
+                </div>
+                <div class="FacilitiesImg" id="HomeSecurityImg"></div>
+            </div>
+        </div>
+    </div>
+    <div id="TextStrip">
+        <h3>Elegant Urban Residence</h3>
+        <h3 class="TextoVerde">Serene Garden Outlook</h3>
+        <h3>Modern Living Spaces</h3>
+    </div>
+
+    <div id="ContactUs" class="ContactEnd">
+        <div>
+            <p id="ContactoSubtitulo">Contact Us</p>
+            <h3 id="ContactoTitulo">Schedule a Home Tour</h3>
+            <p class="TextoNormal">Interested in this property or ready to see it in person? Send us your request and
+                we'll arrange a visit at your convenience</p>
+            <img src="Images/ContactImg.png" height="85" width="88" alt="Imagen mujer contacto"/>
+            <p id="NombreContacto">Emily Rodriguez</p>
+            <p id="NumeroContacto">(+1) 234-5678</p>
+        </div>
+        <div>
+            <form id="ContactForm" novalidate>
+
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your Name"
+                            aria-describedby="name-error"
+                            aria-required="true"
+                    >
+                    <span class="error-msg" id="name-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                            aria-describedby="email-error"
+                            aria-required="true"
+                    >
+                    <span class="error-msg" id="email-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="date">Preferred Date</label>
+                    <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            aria-describedby="date-error"
+                            aria-required="true"
+                    >
+                    <span class="error-msg" id="date-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="time">Preferred Time</label>
+                    <input
+                            type="time"
+                            id="time"
+                            name="time"
+                            aria-describedby="time-error"
+                            aria-required="true"
+                    >
+                    <span class="error-msg" id="time-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us your preferred date, time, or any questions"
+                            aria-describedby="message-error"
+                            aria-required="true"
+                    ></textarea>
+                    <span class="error-msg" id="message-error" role="alert"></span>
+                </div>
+
+                <button type="submit" id="RequestButton">Request a Visit</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <div id="FooterAddress">
+            <h4>Address</h4>
+            <p>742 Evergreen Terrace</p>
+            <p>Brooklyn, NY 11201</p>
+        </div>
+        <div>
+            <h3 id="FooterNombre">Homely</h3>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <p>T. (+1) 234-5678</p>
+            <p>M. contact@homely.com</p>
+        </div>
+    </div>
+    <p>Copyright 2026 - Homely by Designesia</p>
+</footer>
+</body>
+</html>

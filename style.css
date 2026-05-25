@@ -1,0 +1,1019 @@
+
+html, body {
+    /* Esto es para que no se desborde Lateralmente */
+    max-width: 100%;
+}
+
+html {
+    /* Esta línea es lo que principalmente permite hacer un smooth scroll a ciertas secciones de la pagina a través del nav */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Estilo de todas las letras de la página */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    /* Sticky position permite que se enganche a la parte de arriba de la pantalla */
+    position: sticky;
+    top: 0;
+    /* Todo esto lo busqué en google para poder hacer el sticky header */
+    /* Sirve básicamente para que el header se ponga por delante de los elementos en los que se encuentra por encima */
+    z-index: 100;
+    background-color: white;
+    /* Animación para cuando se engancha arriba */
+    transition: box-shadow 0.3s ease, padding 0.3s ease;
+    /* Este padding sirve para que el justify-content del flex no ponga los elementos enganchados a las esquinas */
+    padding: 10px 16.5%;
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Esta es la clase que se activa cuando empiezas a hacer scroll */
+header.scrolled {
+    /* Pequeño efecto para dar la ilusión de que el header está por encima de los elementos */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 6px 16.5%;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.navlist li {
+    /* Esto quita los bullet points de los elementos li */
+    list-style-type: none;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 7px;
+    background-color: #B4C99A;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Hero {
+    width: 67%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Hero > div:first-child {
+    width: 50%;
+}
+
+#Hero > div:last-child {
+    width: 40%;
+}
+
+#HeroTitulo {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#HeroSubtitulo {
+    font-size: 1rem;
+    color: #B4C99A;
+    font-weight: bold;
+}
+
+.TextoNormal {
+    font-size: 1rem;
+    color: #707070;
+    line-height: 2;
+}
+
+#HeroImage {
+    width: 100%;
+}
+
+#HeroSubSection {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #092519;
+}
+
+#SubSectionText {
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Esta sección equivale al texto de la propiedad de la izquierda */
+#HeroSubSection > div:first-child > div:first-child {
+    width: 70%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* El precio "For Sale" de la vivienda a la derecha */
+#HeroSubSection > div:first-child > div:last-child {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Div con las características */
+#HeroSubSection > div:last-child {
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.TextoBlanco {
+    color: white;
+}
+
+#TextoBlancoGrande {
+    margin: 0;
+    font-size: 4rem;
+}
+
+#TextoVerdeSecundario {
+    margin: 0 0 10px;
+    color: #B4C99A;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#DivContainer {
+    gap: 12%;
+}
+
+.SubSectionContainer {
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#ExpandIcon {
+    width: 32px;
+    height: 32px;
+    background-color: #B4C99A;
+    /* Mask-image permet posar una imatge per sobre, en aquest cas un icono, i que agafi el color de fons per fer que la imatge sigui d'un color */
+    mask-image: url("Images/ExpandIcon.png");
+}
+
+#BedIcon {
+    width: 32px;
+    height: 32px;
+    background-color: #B4C99A;
+    mask-image: url("Images/BedIcon.png");
+}
+
+#BathTubIcon {
+    width: 32px;
+    height: 32px;
+    background-color: #B4C99A;
+    mask-image: url("Images/BathTubIcon.png");
+}
+
+#CarIcon {
+    width: 32px;
+    height: 32px;
+    background-color: #B4C99A;
+    mask-image: url("Images/CarIcon.png");
+}
+
+#ImageGrid {
+    width: 100%;
+    background-color: #B4C99A;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Grid con las imágenes en un 3x2 */
+#ImageGrid > div:first-child {
+    width: 67%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Todos los bloques de dentro el grid */
+#ImageGrid > div:first-child div {
+    /* La propietat background-blend-mode et permet aplicar-li un tint al div a partir del color de fons */
+    background-color: #D4DEC6;
+    background-blend-mode: multiply;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#ImageGrid > div:first-child > div > p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* utilizo background-image en vez de <img> para poder usar background-size: cover */
+/* y recortar la imagen sin deformarla */
+/* Así también se puede usar background-position para cuadrar bien la imagen*/
+#LivingRoomImg {
+    background-image: url("Images/LivingRoom.png");
+    background-size: cover;
+}
+
+#MasterBedroomImg {
+    background-image: url("Images/MasterBedroom.png");
+    background-size: cover;
+}
+
+#DinningRoomImg {
+    background-image: url("Images/DinningRoom.png");
+    background-size: cover;
+}
+
+#KitchenImg {
+    background-image: url("Images/Kitchen.png");
+    background-size: cover;
+}
+
+#BathroomImg {
+    background-image: url("Images/Bathroom.png");
+    background-size: cover;
+}
+
+#TerraceImg {
+    background-image: url("Images/Terrace.png");
+    background-size: cover;
+}
+
+#HomeLayout {
+    width: 67%;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#HomeLayout > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+#HomeLayoutTitulo {
+    font-size: 2.7rem;
+    margin: 20px 20px 20px 0;
+}
+
+#HomeLayoutSubtitulo {
+    margin: 0;
+    color: #B4C99A;
+    font-weight: bold;
+}
+
+.FloorAreas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#HomeLayout > div:last-child > div:first-child > button:first-child {
+    border-radius: 0;
+}
+
+#HomeLayout > div:last-child > div:first-child > button:last-child {
+    background-color: transparent;
+}
+
+#LayoutImage {
+    padding-top: 20px;
+}
+
+#TourImage {
+    width: 100%;
+}
+
+#HomeFacilities {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    background-color: #092519;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#FacilitiesSubtitulo {
+    font-weight: bold;
+    margin: 0;
+}
+
+#HomeFacilities > div:first-child {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#LifestyleFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#LifestyleText {
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Grid 4x2 para imagen y texto de cada facility */
+#FacilitiesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.FacilitiesImg {
+    height: 300px;
+    border-radius: 20px;
+}
+
+#SmartHomeImg {
+    background-image: url("Images/SmartHome.png");
+    background-size: cover;
+}
+
+#SolarPoweredImg {
+    background-image: url("Images/SolarPanels.png");
+    background-size: cover;
+}
+
+#SwimmingPoolImg {
+    background-image: url("Images/SwimmingPool.png");
+    background-size: cover;
+}
+
+#HomeSecurityImg {
+    background-image: url("Images/HomeSecurity.png");
+    background-size: cover;
+}
+
+.FacilitiesGridTitulo {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.FacilitiesText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+#TextStrip {
+    width: 100%;
+    height: 100px;
+    background-color: #B4C99A;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.TextoVerde {
+    color: #627061;
+}
+
+#ContactUs {
+    width: 67%;
+    margin: 100px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ContactUs > div:first-child {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ContactoTitulo {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ContactoSubtitulo {
+    color: #B4C99A;
+    font-weight: bold;
+}
+
+#NombreContacto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#NumeroContacto {
+    color: #B4C99A;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+#ContactUs > div:last-child {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+label {
+    width: 100%;
+    height: 50px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    background-color: #F6F7F7;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: #E9EAEA;
+}
+
+#TextareaLabel {
+    height: 5.5rem;
+}
+
+textarea {
+    height: 70px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #F6F7F7;
+    border-color: #E9EAEA;
+    border-radius: 7px;
+}
+
+#RequestButton {
+    width: 150px;
+}
+
+footer {
+    width: 100%;
+    background-color: #092519;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div:first-child {
+    width: 67%;
+    padding: 70px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div:first-child div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div:first-child div * {
+    margin: 10px 0 10px 0;
+}
+
+#FooterNombre {
+    font-size: 1.6rem;
+}
+
+#SubpageTitulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/News.png");
+    background-size: cover;
+    background-position: top;
+    background-color: #B1CFB7;
+    background-blend-mode: multiply;
+}
+
+#SubpageTitulo > div {
+    width: 67%;
+    padding: 50px 0 50px 0;
+    color: white;
+    font-size: 3rem;
+}
+
+#NewsGrid {
+    width: 67%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+#NewsGrid div {
+    height: 400px;
+    background-color: #B1CFB7;
+    background-blend-mode: multiply;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#NewsGrid div > p {
+    margin: 0 40px 50px 40px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+#DailyHomeCareImg {
+    background-image: url("Images/DailyHomeCare.png");
+    background-size: cover;
+}
+
+#MaintainingCleanHomeImg {
+    background-image: url("Images/MaintainingCleanHome.png");
+    background-size: cover;
+}
+
+#EssentialHomeHabitsImg {
+    background-image: url("Images/EssentialHomeHabits.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#CleaningHacksImg {
+    background-image: url("Images/CleaningHacks.png");
+    background-size: cover;
+}
+
+#HomeMaintenanceImg {
+    background-image: url("Images/HomeMaintenance.png");
+    background-size: cover;
+}
+
+#ReduceClutterImg {
+    background-image: url("Images/ReduceClutter.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#NewsButtons {
+    width: 67%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#NewsButtons button {
+    padding: 15px 18px;
+    border-radius: 100%;
+}
+
+.UnselectedButton {
+    background-color: transparent;
+}
+
+#SelectedButton {
+    background-color: #D8F6B2;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#AboutSubsection {
+    width: 67%;
+    margin: 80px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#AboutSubtitulo {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+#AboutSubsection > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#AboutSubsection > div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#AboutSubsection > div div h3 {
+    font-size: 1.5rem;
+}
+
+#AboutSubsection > div div * {
+    margin: 6px 0;
+}
+
+#AboutSubsection > div div > div {
+    margin: 20px 0 30px 0;
+}
+
+#CalendarIcon {
+    width: 64px;
+    height: 64px;
+    background-color: #B4C99A;
+    mask-image: url("Images/CalendarIcon.png");
+}
+
+#ExpandIcon64 {
+    width: 64px;
+    height: 64px;
+    background-color: #B4C99A;
+    mask-image: url("Images/ExpandIcon64.png");
+}
+
+#BedIcon64 {
+    width: 64px;
+    height: 64px;
+    background-color: #B4C99A;
+    mask-image: url("Images/BedIcon64.png");
+}
+
+#BathTubIcon64 {
+    width: 64px;
+    height: 64px;
+    background-color: #B4C99A;
+    mask-image: url("Images/BathTubIcon64.png");
+}
+
+#CarIcon64 {
+    width: 64px;
+    height: 64px;
+    background-color: #B4C99A;
+    mask-image: url("Images/CarIcon64.png");
+}
+
+#PriceTagIcon {
+    width: 64px;
+    height: 64px;
+    background-color: #B4C99A;
+    mask-image: url("Images/PriceTagIcon.png");
+}
+
+#AboutLayout {
+    width: 100%;
+    background: #092519;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutLayoutSubtitulo {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+#AboutFacilities {
+    width: 67%;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#AboutFacilitiesSubtitulo {
+    margin: 0;
+    color: #B4C99A;
+    font-weight: bold;
+}
+
+.ContactEnd {
+    align-items: end;
+}
+
+.ContactStart {
+    align-items: start;
+}
+
+#Locations {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    background-color: #D9E3CB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Locations > div {
+    width: 67%;
+}
+
+#LocationsTitulo {
+    font-size: 3rem;
+}
+
+#ButtonsLocations button {
+    background-color: transparent;
+}
+
+#ButtonsLocations > button:first-child {
+    border-radius: 0;
+    background-color: #B4C99A;
+}
+
+#GroceriesList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#GroceriesList > div {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 20px 20px 20px;
+}
+
+#GroceriesList > div > img {
+    width: 48px;
+    height: 48px;
+    margin: 20px 20px 0 0;
+}
+
+label[for] {
+    display: block;
+    height: auto;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    padding-left: 10px;
+}
+
+input.invalid,
+textarea.invalid {
+    border-color: #e05252;
+    background-color: #fff5f5;
+}
+
+input.valid,
+textarea.valid {
+    border-color: #B4C99A;
+}
+
+.error-msg {
+    color: #e05252;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    /* Evita que el layout salte al aparecer */
+    min-height: 18px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 14px 5%;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 100;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        padding: 20px 0;
+    }
+
+    .navlist.open {
+        display: flex;
+    }
+
+    #Hero {
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    #Hero > div:first-child,
+    #Hero > div:last-child {
+        width: 100%;
+    }
+
+    #HeroTitulo {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    #SubSectionText {
+        flex-direction: column;
+        gap: 30px;
+        width: 90%;
+    }
+
+    #HeroSubSection > div:first-child > div:first-child {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #HeroSubSection > div:first-child > div:last-child {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #TextoBlancoGrande {
+        font-size: 2.8rem;
+    }
+
+    #HeroSubSection > div:last-child {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #DivContainer {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #ImageGrid > div:first-child {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    #HomeLayout {
+        width: 90%;
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 0;
+    }
+
+    #HomeLayoutTitulo {
+        font-size: 2rem;
+    }
+
+    #HomeLayout > div:last-child {
+        width: 100%;
+    }
+
+    #LayoutImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #HomeFacilities > div:first-child {
+        width: 90%;
+    }
+
+    #FacilitiesGrid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .FacilitiesImg {
+        height: 220px;
+    }
+
+    #LifestyleFlex {
+        margin-bottom: 20px;
+    }
+
+    #LifestyleText {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    #TextStrip {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0;
+        gap: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #ContactUs {
+        width: 67%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        margin: 60px 0;
+    }
+
+    #ContactUs > div:first-child,
+    #ContactUs > div:last-child {
+        width: 100%;
+    }
+
+    #ContactoTitulo {
+        font-size: 1.8rem;
+    }
+
+    #ContactUs > div:last-child div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer > div:first-child {
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 50px 0 30px;
+    }
+
+    #NewsGrid {
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    #FooterAddress {
+        order: 4;
+    }
+
+    header.scrolled {
+        padding: 14px 5%;
+    }
+}
