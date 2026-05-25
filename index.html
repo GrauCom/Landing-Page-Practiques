@@ -12,13 +12,13 @@
     <h1>homely</h1>
     <nav>
         <ul class="navlist">
-            <!--        Algunos de los links apuntan a secciones de la página para así poder hacer scroll hacia esa section-->
+            <!--Algunos de los links apuntan a secciones de la página para así poder hacer scroll hacia esa section-->
             <li><a href="index.html">Home</a></li>
             <li><a href="#Hero">Hero</a></li>
-            <li><a href="#HomeLayout">About</a></li>
-            <li>Gallery</li>
+            <li><a href="#HomeFacilities">Facilities</a></li>
+            <li><a href="About.html">About</a></li>
             <li><a href="News.html">News</a></li>
-            <li><a href="#ContactUs">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
     <!--Botón Hamburger con un HTML entity-->
@@ -188,8 +188,9 @@
             <p id="NumeroContacto">(+1) 234-5678</p>
         </div>
         <div>
+            <!--Se utiliza novalidate para deshabilitar la validación del formulario,-->
+            <!--ya que lo hará el propio archivo JS-->
             <form id="ContactForm" novalidate>
-
                 <div class="field">
                     <label for="name">Full Name</label>
                     <input
@@ -198,8 +199,12 @@
                             name="name"
                             placeholder="Your Name"
                             aria-describedby="name-error"
-                            aria-required="true"
-                    >
+                            aria-required="true">
+                    <!--aria-describedby vincula el span con el input,-->
+                    <!--para mostrar correctamente el error-->
+                    <!--aria-required indica que el campo del input es obligatorio-->
+
+                    <!--role="alert" sirve para avisar y mostrar cuando hay un error-->
                     <span class="error-msg" id="name-error" role="alert"></span>
                 </div>
 
@@ -211,8 +216,7 @@
                             name="email"
                             placeholder="Your Email"
                             aria-describedby="email-error"
-                            aria-required="true"
-                    >
+                            aria-required="true">
                     <span class="error-msg" id="email-error" role="alert"></span>
                 </div>
 
@@ -223,8 +227,7 @@
                             id="date"
                             name="date"
                             aria-describedby="date-error"
-                            aria-required="true"
-                    >
+                            aria-required="true">
                     <span class="error-msg" id="date-error" role="alert"></span>
                 </div>
 
@@ -235,8 +238,7 @@
                             id="time"
                             name="time"
                             aria-describedby="time-error"
-                            aria-required="true"
-                    >
+                            aria-required="true">
                     <span class="error-msg" id="time-error" role="alert"></span>
                 </div>
 

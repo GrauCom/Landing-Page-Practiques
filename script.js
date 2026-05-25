@@ -24,6 +24,7 @@ navlist.querySelectorAll('a').forEach(link => {
     });
 });
 
+// Mostrar error en un campo de input
 function showError(input, message) {
     const errorSpan = document.getElementById(input.id + '-error');
     input.classList.add('invalid');
@@ -32,6 +33,7 @@ function showError(input, message) {
     errorSpan.textContent = message;
 }
 
+// Marcar campo como válido
 function showValid(input) {
     const errorSpan = document.getElementById(input.id + '-error');
     input.classList.remove('invalid');
@@ -40,6 +42,7 @@ function showValid(input) {
     errorSpan.textContent = '';
 }
 
+// Valida un campo individual y devuelve true/false acorde
 function validateField(input) {
     const value = input.value.trim();
 
@@ -75,16 +78,20 @@ function validateField(input) {
     return true;
 }
 
+// Validación en tiempo real al perder focus de un campo
 form.querySelectorAll('input, textarea').forEach(input => {
     input.addEventListener('blur', () => validateField(input));
 });
 
+// Función que se dispara cuando el botón de tipo submit se acciona, osea cuando se envia el formulario
 form.addEventListener('submit', (e) => {
+    // Evita el envío nativo, por lo que cancela cualquier acción predeterminada del form
     e.preventDefault();
 
     const fields = form.querySelectorAll('input, textarea');
     let formIsValid = true;
 
+    // Bucle que itera por cada campo, y comprueba si el contenido del input es válido
     fields.forEach(field => {
         if (!validateField(field)) {
             formIsValid = false;

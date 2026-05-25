@@ -4,69 +4,118 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <header>
-  <h1>homely</h1>
-  <nav>
-    <ul class="navlist">
-      <li><a href="index.html">Home</a></li>
-      <li>About</li>
-      <li>Gallery</li>
-      <li><a href="News.html">News</a></li>
-      <li>contact</li>
-    </ul>
-  </nav>
-  <button class="hamburger" id="hamburger">&#9776;</button>
-  <button>Schedule Visit</button>
+    <h1>homely</h1>
+    <nav>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <button>Schedule Visit</button>
 </header>
 <main>
-  <div id="SubpageTitulo">
-    <div>
-      <h1>Contact</h1>
+    <div id="SubpageTitulo">
+        <div>
+            <h1>Contact</h1>
+        </div>
     </div>
-  </div>
-  <div id="ContactUs" class="ContactStart">
-    <div>
-      <p class="TextoNormal">Interested in this property or ready to see it in person? Send us your request and
-        we'll arrange a visit at your convenience</p>
-      <img src="Images/ContactImg.png" height="85" width="88" alt="Imagen mujer contacto"/>
-      <p id="NombreContacto">Emily Rodriguez</p>
-      <p id="NumeroContacto">(+1) 234-5678</p>
+    <div id="ContactUs" class="ContactStart">
+        <div>
+            <p class="TextoNormal">Interested in this property or ready to see it in person? Send us your request and
+                we'll arrange a visit at your convenience</p>
+            <img src="Images/ContactImg.png" height="85" width="88" alt="Imagen mujer contacto"/>
+            <p id="NombreContacto">Emily Rodriguez</p>
+            <p id="NumeroContacto">(+1) 234-5678</p>
+        </div>
+        <div>
+            <form id="ContactForm" novalidate>
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your Name"
+                            aria-describedby="name-error"
+                            aria-required="true">
+                    <span class="error-msg" id="name-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                            aria-describedby="email-error"
+                            aria-required="true">
+                    <span class="error-msg" id="email-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="date">Preferred Date</label>
+                    <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            aria-describedby="date-error"
+                            aria-required="true">
+                    <span class="error-msg" id="date-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="time">Preferred Time</label>
+                    <input
+                            type="time"
+                            id="time"
+                            name="time"
+                            aria-describedby="time-error"
+                            aria-required="true">
+                    <span class="error-msg" id="time-error" role="alert"></span>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Tell us your preferred date, time, or any questions"
+                            aria-describedby="message-error"
+                            aria-required="true"
+                    ></textarea>
+                    <span class="error-msg" id="message-error" role="alert"></span>
+                </div>
+
+                <button type="submit" id="RequestButton">Request a Visit</button>
+            </form>
+        </div>
     </div>
-    <div>
-      <div class="InputFieldsDiv">
-        <label><input placeholder="Your Name"></label>
-        <label><input placeholder="Your Email"></label>
-      </div>
-      <div>
-        <label><input type="date"></label>
-        <label><input type="time"></label>
-      </div>
-      <label id="TextareaLabel">
-        <textarea placeholder="Tell us your preferred date, time, or any questions"></textarea>
-      </label>
-      <button id="RequestButton">Request a Visit</button>
-    </div>
-  </div>
 </main>
 <footer>
-  <div>
-    <div id="FooterAddress">
-      <h4>Address</h4>
-      <p>742 Evergreen Terrace</p>
-      <p>Brooklyn, NY 11201</p>
-    </div>
     <div>
-      <h3 id="FooterNombre">Homely</h3>
+        <div id="FooterAddress">
+            <h4>Address</h4>
+            <p>742 Evergreen Terrace</p>
+            <p>Brooklyn, NY 11201</p>
+        </div>
+        <div>
+            <h3 id="FooterNombre">Homely</h3>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <p>T. (+1) 234-5678</p>
+            <p>M. contact@homely.com</p>
+        </div>
     </div>
-    <div>
-      <h3>Contact Us</h3>
-      <p>T. (+1) 234-5678</p>
-      <p>M. contact@homely.com</p>
-    </div>
-  </div>
-  <p>Copyright 2026 - Homely by Designesia</p>
+    <p>Copyright 2026 - Homely by Designesia</p>
 </footer>
 </body>
 </html>
