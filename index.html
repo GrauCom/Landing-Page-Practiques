@@ -5,9 +5,7 @@
     <!--Esta linea sirve para optimizar el viewport para móviles-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <!--De normal, la página tiene que esperar a que se cargue el archivo CSS para cargarla del todo-->
-    <!--Con esta linea, se descarga el archivo CSS en segundo plano sin bloquear-->
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -46,7 +44,7 @@
             <button>Schedule Visit</button>
         </div>
     </div>
-    <img src="Images/MinimalistHouse.webp" width="2250" height="1140" fetchpriority="high" alt="Casa minimalista"
+    <img src="Images/MinimalistHouse.webp" height="1140" width="2250" fetchpriority="high" alt="Casa minimalista"
          id="HeroImage"/>
     <div id="HeroSubSection">
         <div id="SubSectionText">
@@ -141,7 +139,7 @@
                  id="LayoutImage"/>
         </div>
     </div>
-    <img src="Images/HouseTour.webp" width="1785" height="743" loading="lazy" alt="Video Tour Casa" id="TourImage"/>
+    <img src="Images/HouseTour.webp" height="743" width="1785" loading="lazy" alt="Video Tour Casa" id="TourImage"/>
     <div id="HomeFacilities">
         <div>
             <p class="TextoBlanco" id="FacilitiesSubtitulo">Home Facilities</p>
@@ -150,13 +148,15 @@
                 <button>View More</button>
             </div>
             <div id="FacilitiesGrid">
-                <div class="FacilitiesImg" id="SmartHomeImg"></div>
+                <img src="Images/SmartHome.webp" alt="Casa Inteligente" height="433" width="600" class="FacilitiesImg"
+                     loading="lazy"/>
                 <div class="FacilitiesText">
                     <h3 class="TextoBlanco FacilitiesGridTitulo">Smart Home</h3>
                     <p class="TextoBlanco">Experience seamless daily comfort with intuitive smart features that connect
                         your home effortlessly and enhance modern living.</p>
                 </div>
-                <div class="FacilitiesImg" id="SolarPoweredImg"></div>
+                <img src="Images/SolarPanels.webp" alt="Paneles Solares" height="653" width="1160"
+                     class="FacilitiesImg" loading="lazy">
                 <div class="FacilitiesText">
                     <h3 class="TextoBlanco FacilitiesGridTitulo">Solar Powered</h3>
                     <p class="TextoBlanco">Generate clean renewable energy with efficient solar systems designed to
@@ -167,13 +167,15 @@
                     <p class="TextoBlanco">Relax in a beautifully designed private pool that offers refreshing water,
                         peaceful ambiance, and the perfect space for leisure at home.</p>
                 </div>
-                <div class="FacilitiesImg" id="SwimmingPoolImg"></div>
+                <img src="Images/SwimmingPool.webp" alt="Piscina" height="1332" width="2000" class="FacilitiesImg"
+                     loading="lazy">
                 <div class="FacilitiesText">
                     <h3 class="TextoBlanco FacilitiesGridTitulo">Home Security</h3>
                     <p class="TextoBlanco">Protect your home with advanced security features that offer continuous
                         monitoring, smart alerts, and peace of mind every day.</p>
                 </div>
-                <div class="FacilitiesImg" id="HomeSecurityImg"></div>
+                <img src="Images/HomeSecurity.webp" alt="Seguridad de casa" height="3072" width="4608"
+                     class="FacilitiesImg" loading="lazy">
             </div>
         </div>
     </div>

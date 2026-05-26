@@ -254,31 +254,38 @@ main {
 #LivingRoomImg {
     background-image: url("Images/LivingRoom.webp");
     background-size: cover;
+    /* Esto sirve para reducir el CLS*/
+    aspect-ratio: 16 / 9;
 }
 
 #MasterBedroomImg {
     background-image: url("Images/MasterBedroom.webp");
     background-size: cover;
+    aspect-ratio: 16 / 9;
 }
 
 #DinningRoomImg {
     background-image: url("Images/DinningRoom.webp");
     background-size: cover;
+    aspect-ratio: 16 / 9;
 }
 
 #KitchenImg {
     background-image: url("Images/Kitchen.webp");
     background-size: cover;
+    aspect-ratio: 16 / 9;
 }
 
 #BathroomImg {
     background-image: url("Images/Bathroom.webp");
     background-size: cover;
+    aspect-ratio: 16 / 9;
 }
 
 #TerraceImg {
     background-image: url("Images/Terrace.webp");
     background-size: cover;
+    aspect-ratio: 16 / 9;
 }
 
 #HomeLayout {
@@ -371,28 +378,11 @@ main {
 }
 
 .FacilitiesImg {
+    width: 100%;
     height: 300px;
     border-radius: 20px;
-}
-
-#SmartHomeImg {
-    background-image: url("Images/SmartHome.webp");
-    background-size: cover;
-}
-
-#SolarPoweredImg {
-    background-image: url("Images/SolarPanels.webp");
-    background-size: cover;
-}
-
-#SwimmingPoolImg {
-    background-image: url("Images/SwimmingPool.webp");
-    background-size: cover;
-}
-
-#HomeSecurityImg {
-    background-image: url("Images/HomeSecurity.webp");
-    background-size: cover;
+    /* Para que cubra la imagen */
+    object-fit: cover;
 }
 
 .FacilitiesGridTitulo {
@@ -838,6 +828,7 @@ textarea.valid {
     font-size: 0.8rem;
     margin-top: 4px;
     /* Evita que el layout salte al aparecer */
+    /* También reduce el CLS, ya que reserva un espacio aún que esté vacío */
     min-height: 18px;
 }
 
