@@ -1016,4 +1016,12 @@ textarea.valid {
     header.scrolled {
         padding: 14px 5%;
     }
+
+    #AboutSubsection > div {
+        flex-direction: column;
+    }
+
+    #GroceriesList {
+        flex-direction: column;
+    }
 }
