@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--Esta linea sirve para optimizar el viewport para móviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <!--De normal, la página tiene que esperar a que se cargue el archivo CSS para cargarla del todo-->
+    <!--Con esta linea, se descarga el archivo CSS en segundo plano sin bloquear-->
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -42,7 +46,8 @@
             <button>Schedule Visit</button>
         </div>
     </div>
-    <img src="Images/MinimalistHouse.jpg" alt="Casa minimalista" id="HeroImage"/>
+    <img src="Images/MinimalistHouse.webp" width="2250" height="1140" fetchpriority="high" alt="Casa minimalista"
+         id="HeroImage"/>
     <div id="HeroSubSection">
         <div id="SubSectionText">
             <div>
@@ -132,10 +137,11 @@
                 <button>Floor 1</button>
                 <button>Floor 2</button>
             </div>
-            <img src="Images/HouseLayout.png" height="656" width="630" alt="Layout de la casa" id="LayoutImage"/>
+            <img src="Images/HouseLayout.webp" height="656" width="630" loading="lazy" alt="Layout de la casa"
+                 id="LayoutImage"/>
         </div>
     </div>
-    <img src="Images/HouseTour.png" alt="Video Tour Casa" id="TourImage"/>
+    <img src="Images/HouseTour.webp" width="1785" height="743" loading="lazy" alt="Video Tour Casa" id="TourImage"/>
     <div id="HomeFacilities">
         <div>
             <p class="TextoBlanco" id="FacilitiesSubtitulo">Home Facilities</p>
@@ -183,7 +189,7 @@
             <h3 id="ContactoTitulo">Schedule a Home Tour</h3>
             <p class="TextoNormal">Interested in this property or ready to see it in person? Send us your request and
                 we'll arrange a visit at your convenience</p>
-            <img src="Images/ContactImg.png" height="85" width="88" alt="Imagen mujer contacto"/>
+            <img src="Images/ContactImg.webp" height="85" width="88" alt="Imagen mujer contacto"/>
             <p id="NombreContacto">Emily Rodriguez</p>
             <p id="NumeroContacto">(+1) 234-5678</p>
         </div>

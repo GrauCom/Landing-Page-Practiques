@@ -186,28 +186,28 @@ main {
     height: 32px;
     background-color: #B4C99A;
     /* Mask-image permet posar una imatge per sobre, en aquest cas un icono, i que agafi el color de fons per fer que la imatge sigui d'un color */
-    mask-image: url("Images/ExpandIcon.png");
+    mask-image: url("Images/ExpandIcon.webp");
 }
 
 #BedIcon {
     width: 32px;
     height: 32px;
     background-color: #B4C99A;
-    mask-image: url("Images/BedIcon.png");
+    mask-image: url("Images/BedIcon.webp");
 }
 
 #BathTubIcon {
     width: 32px;
     height: 32px;
     background-color: #B4C99A;
-    mask-image: url("Images/BathTubIcon.png");
+    mask-image: url("Images/BathTubIcon.webp");
 }
 
 #CarIcon {
     width: 32px;
     height: 32px;
     background-color: #B4C99A;
-    mask-image: url("Images/CarIcon.png");
+    mask-image: url("Images/CarIcon.webp");
 }
 
 #ImageGrid {
@@ -252,32 +252,32 @@ main {
 /* y recortar la imagen sin deformarla */
 /* Así también se puede usar background-position para cuadrar bien la imagen*/
 #LivingRoomImg {
-    background-image: url("Images/LivingRoom.png");
+    background-image: url("Images/LivingRoom.webp");
     background-size: cover;
 }
 
 #MasterBedroomImg {
-    background-image: url("Images/MasterBedroom.png");
+    background-image: url("Images/MasterBedroom.webp");
     background-size: cover;
 }
 
 #DinningRoomImg {
-    background-image: url("Images/DinningRoom.png");
+    background-image: url("Images/DinningRoom.webp");
     background-size: cover;
 }
 
 #KitchenImg {
-    background-image: url("Images/Kitchen.png");
+    background-image: url("Images/Kitchen.webp");
     background-size: cover;
 }
 
 #BathroomImg {
-    background-image: url("Images/Bathroom.png");
+    background-image: url("Images/Bathroom.webp");
     background-size: cover;
 }
 
 #TerraceImg {
-    background-image: url("Images/Terrace.png");
+    background-image: url("Images/Terrace.webp");
     background-size: cover;
 }
 
@@ -376,22 +376,22 @@ main {
 }
 
 #SmartHomeImg {
-    background-image: url("Images/SmartHome.png");
+    background-image: url("Images/SmartHome.webp");
     background-size: cover;
 }
 
 #SolarPoweredImg {
-    background-image: url("Images/SolarPanels.png");
+    background-image: url("Images/SolarPanels.webp");
     background-size: cover;
 }
 
 #SwimmingPoolImg {
-    background-image: url("Images/SwimmingPool.png");
+    background-image: url("Images/SwimmingPool.webp");
     background-size: cover;
 }
 
 #HomeSecurityImg {
-    background-image: url("Images/HomeSecurity.png");
+    background-image: url("Images/HomeSecurity.webp");
     background-size: cover;
 }
 
@@ -535,7 +535,7 @@ footer > div:first-child div * {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("Images/News.png");
+    background-image: url("Images/News.webp");
     background-size: cover;
     background-position: top;
     background-color: #B1CFB7;
@@ -577,33 +577,33 @@ footer > div:first-child div * {
 }
 
 #DailyHomeCareImg {
-    background-image: url("Images/DailyHomeCare.png");
+    background-image: url("Images/DailyHomeCare.webp");
     background-size: cover;
 }
 
 #MaintainingCleanHomeImg {
-    background-image: url("Images/MaintainingCleanHome.png");
+    background-image: url("Images/MaintainingCleanHome.webp");
     background-size: cover;
 }
 
 #EssentialHomeHabitsImg {
-    background-image: url("Images/EssentialHomeHabits.png");
+    background-image: url("Images/EssentialHomeHabits.webp");
     background-size: cover;
     background-position: center;
 }
 
 #CleaningHacksImg {
-    background-image: url("Images/CleaningHacks.png");
+    background-image: url("Images/CleaningHacks.webp");
     background-size: cover;
 }
 
 #HomeMaintenanceImg {
-    background-image: url("Images/HomeMaintenance.png");
+    background-image: url("Images/HomeMaintenance.webp");
     background-size: cover;
 }
 
 #ReduceClutterImg {
-    background-image: url("Images/ReduceClutter.png");
+    background-image: url("Images/ReduceClutter.webp");
     background-size: cover;
     background-position: center;
 }
@@ -684,42 +684,42 @@ footer > div:first-child div * {
     width: 64px;
     height: 64px;
     background-color: #B4C99A;
-    mask-image: url("Images/CalendarIcon.png");
+    mask-image: url("Images/CalendarIcon.webp");
 }
 
 #ExpandIcon64 {
     width: 64px;
     height: 64px;
     background-color: #B4C99A;
-    mask-image: url("Images/ExpandIcon64.png");
+    mask-image: url("Images/ExpandIcon64.webp");
 }
 
 #BedIcon64 {
     width: 64px;
     height: 64px;
     background-color: #B4C99A;
-    mask-image: url("Images/BedIcon64.png");
+    mask-image: url("Images/BedIcon64.webp");
 }
 
 #BathTubIcon64 {
     width: 64px;
     height: 64px;
     background-color: #B4C99A;
-    mask-image: url("Images/BathTubIcon64.png");
+    mask-image: url("Images/BathTubIcon64.webp");
 }
 
 #CarIcon64 {
     width: 64px;
     height: 64px;
     background-color: #B4C99A;
-    mask-image: url("Images/CarIcon64.png");
+    mask-image: url("Images/CarIcon64.webp");
 }
 
 #PriceTagIcon {
     width: 64px;
     height: 64px;
     background-color: #B4C99A;
-    mask-image: url("Images/PriceTagIcon.png");
+    mask-image: url("Images/PriceTagIcon.webp");
 }
 
 #AboutLayout {
@@ -746,7 +746,7 @@ footer > div:first-child div * {
 
 #AboutFacilitiesSubtitulo {
     margin: 0;
-    color: #B4C99A;
+    color: #092519;
     font-weight: bold;
 }
 

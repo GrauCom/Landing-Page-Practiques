@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -27,10 +28,10 @@
         </div>
     </div>
     <div id="AboutSubsection">
-        <h3 id="AboutSubtitulo">This exceptional residence offers refined living with generous open spaces, bright
+        <h2 id="AboutSubtitulo">This exceptional residence offers refined living with generous open spaces, bright
             interiors, and a warm
             modern design that blends comfort with style. Every room is crafted to create a welcoming atmosphere, giving
-            you the perfect setting for daily, relaxation, and memorable moments.</h3>
+            you the perfect setting for daily, relaxation, and memorable moments.</h2>
         <div>
             <div>
                 <div id="CalendarIcon"></div>
@@ -111,7 +112,7 @@
                     <button>Floor 1</button>
                     <button class="TextoBlanco">Floor 2</button>
                 </div>
-                <img src="Images/HouseLayout.png" height="656" width="630" alt="Layout de la casa" id="LayoutImage"/>
+                <img src="Images/HouseLayout.webp" height="656" width="630" loading="lazy" alt="Layout de la casa" id="LayoutImage"/>
             </div>
         </div>
     </div>
@@ -159,7 +160,7 @@
             </div>
             <div id="GroceriesList">
                 <div>
-                    <img src="Images/ShoppingKartIcon.png" alt="Carrito">
+                    <img src="Images/ShoppingKartIcon.webp" loading="lazy" alt="Carrito">
                     <div>
                         <h3>Trader Joe's</h3>
                         <p>6 min walk</p>
@@ -167,7 +168,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="Images/ShoppingKartIcon.png" alt="Carrito">
+                    <img src="Images/ShoppingKartIcon.webp" loading="lazy" alt="Carrito">
                     <div>
                         <h3>Whole Foods Market</h3>
                         <p>10 min walk</p>
@@ -175,7 +176,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="Images/ShoppingKartIcon.png" alt="Carrito">
+                    <img src="Images/ShoppingKartIcon.webp" loading="lazy" alt="Carrito">
                     <div>
                         <h3>City point BKLYN</h3>
                         <p>8-10 min walk</p>
