@@ -254,38 +254,31 @@ main {
 #LivingRoomImg {
     background-image: url("Images/LivingRoom.webp");
     background-size: cover;
-    /* Esto sirve para reducir el CLS*/
-    aspect-ratio: 16 / 9;
 }
 
 #MasterBedroomImg {
     background-image: url("Images/MasterBedroom.webp");
     background-size: cover;
-    aspect-ratio: 16 / 9;
 }
 
 #DinningRoomImg {
     background-image: url("Images/DinningRoom.webp");
     background-size: cover;
-    aspect-ratio: 16 / 9;
 }
 
 #KitchenImg {
     background-image: url("Images/Kitchen.webp");
     background-size: cover;
-    aspect-ratio: 16 / 9;
 }
 
 #BathroomImg {
     background-image: url("Images/Bathroom.webp");
     background-size: cover;
-    aspect-ratio: 16 / 9;
 }
 
 #TerraceImg {
     background-image: url("Images/Terrace.webp");
     background-size: cover;
-    aspect-ratio: 16 / 9;
 }
 
 #HomeLayout {
@@ -548,7 +541,7 @@ footer > div:first-child div * {
     gap: 20px;
 }
 
-#NewsGrid div {
+#NewsGrid article {
     height: 400px;
     background-color: #B1CFB7;
     background-blend-mode: multiply;
@@ -558,7 +551,7 @@ footer > div:first-child div * {
     justify-content: end;
 }
 
-#NewsGrid div > p {
+#NewsGrid article > p {
     margin: 0 40px 50px 40px;
     font-size: 1.2rem;
     line-height: 2rem;

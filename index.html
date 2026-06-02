@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Página principal de Landing page Homely sobre compra de propiedades">
+    <meta name="keywords" content="Página Inicio, Landing Page, Homely, Propiedad, Casa">
     <!--Esta linea sirve para optimizar el viewport para móviles-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Homely</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -31,7 +33,7 @@
     <button>Schedule Visit</button>
 </header>
 <main>
-    <div id="Hero">
+    <section id="Hero">
         <div>
             <h1 id="HeroTitulo">Your Next Perfect and Beautiful Home for Living Today</h1>
             <p id="HeroSubtitulo">742 Evergreen Terrace Brooklyn, NY 11201</p>
@@ -43,10 +45,10 @@
                 provides everything you need for elevated living in a prime neighborhood.</p>
             <button>Schedule Visit</button>
         </div>
-    </div>
+    </section>
     <img src="Images/MinimalistHouse.webp" height="1140" width="2250" fetchpriority="high" alt="Casa minimalista"
          id="HeroImage"/>
-    <div id="HeroSubSection">
+    <section id="HeroSubSection">
         <div id="SubSectionText">
             <div>
                 <p class="TextoBlanco">This exceptional residence offers refined living with generous open spaces,
@@ -78,8 +80,8 @@
                 <p class="TextoBlanco">5 Cars</p>
             </div>
         </div>
-    </div>
-    <div id="ImageGrid">
+    </section>
+    <section id="ImageGrid">
         <div>
             <div id="LivingRoomImg"><p>Living Room</p></div>
             <div id="MasterBedroomImg"><p>Master Bedroom</p></div>
@@ -88,8 +90,8 @@
             <div id="BathroomImg"><p>Bathroom</p></div>
             <div id="TerraceImg"><p>Terrace</p></div>
         </div>
-    </div>
-    <div id="HomeLayout">
+    </section>
+    <section id="HomeLayout">
         <div>
             <p id="HomeLayoutSubtitulo">Discover</p>
             <h2 id="HomeLayoutTitulo">Home Floorplans</h2>
@@ -138,9 +140,9 @@
             <img src="Images/HouseLayout.webp" height="656" width="630" loading="lazy" alt="Layout de la casa"
                  id="LayoutImage"/>
         </div>
-    </div>
+    </section>
     <img src="Images/HouseTour.webp" height="743" width="1785" loading="lazy" alt="Video Tour Casa" id="TourImage"/>
-    <div id="HomeFacilities">
+    <section id="HomeFacilities">
         <div>
             <p class="TextoBlanco" id="FacilitiesSubtitulo">Home Facilities</p>
             <div id="LifestyleFlex">
@@ -178,14 +180,14 @@
                      class="FacilitiesImg" loading="lazy">
             </div>
         </div>
-    </div>
+    </section>
     <div id="TextStrip">
         <h3>Elegant Urban Residence</h3>
         <h3 class="TextoVerde">Serene Garden Outlook</h3>
         <h3>Modern Living Spaces</h3>
     </div>
 
-    <div id="ContactUs" class="ContactEnd">
+    <section id="ContactUs" class="ContactEnd">
         <div>
             <p id="ContactoSubtitulo">Contact Us</p>
             <h3 id="ContactoTitulo">Schedule a Home Tour</h3>
@@ -205,15 +207,8 @@
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Your Name"
-                            aria-describedby="name-error"
-                            aria-required="true">
-                    <!--aria-describedby vincula el span con el input,-->
-                    <!--para mostrar correctamente el error-->
-                    <!--aria-required indica que el campo del input es obligatorio-->
-
-                    <!--role="alert" sirve para avisar y mostrar cuando hay un error-->
-                    <span class="error-msg" id="name-error" role="alert"></span>
+                            placeholder="Your Name">
+                    <span class="error-msg" id="name-error"></span>
                 </div>
 
                 <div class="field">
@@ -222,10 +217,8 @@
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Your Email"
-                            aria-describedby="email-error"
-                            aria-required="true">
-                    <span class="error-msg" id="email-error" role="alert"></span>
+                            placeholder="Your Email">
+                    <span class="error-msg" id="email-error"></span>
                 </div>
 
                 <div class="field">
@@ -233,10 +226,8 @@
                     <input
                             type="date"
                             id="date"
-                            name="date"
-                            aria-describedby="date-error"
-                            aria-required="true">
-                    <span class="error-msg" id="date-error" role="alert"></span>
+                            name="date">
+                    <span class="error-msg" id="date-error"></span>
                 </div>
 
                 <div class="field">
@@ -244,10 +235,8 @@
                     <input
                             type="time"
                             id="time"
-                            name="time"
-                            aria-describedby="time-error"
-                            aria-required="true">
-                    <span class="error-msg" id="time-error" role="alert"></span>
+                            name="time">
+                    <span class="error-msg" id="time-error"></span>
                 </div>
 
                 <div class="field">
@@ -256,16 +245,14 @@
                             id="message"
                             name="message"
                             placeholder="Tell us your preferred date, time, or any questions"
-                            aria-describedby="message-error"
-                            aria-required="true"
                     ></textarea>
-                    <span class="error-msg" id="message-error" role="alert"></span>
+                    <span class="error-msg" id="message-error"></span>
                 </div>
 
                 <button type="submit" id="RequestButton">Request a Visit</button>
             </form>
         </div>
-    </div>
+    </section>
 </main>
 <footer>
     <div>

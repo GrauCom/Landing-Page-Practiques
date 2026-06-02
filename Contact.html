@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Página de Contacto de Landing page Homely">
+    <meta name="keywords" content="Contact, Landing Page, Homely, Propiedad, Casa">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Homely</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -22,12 +24,12 @@
     <button>Schedule Visit</button>
 </header>
 <main>
-    <div id="SubpageTitulo">
+    <section id="SubpageTitulo">
         <div>
             <h1>Contact</h1>
         </div>
-    </div>
-    <div id="ContactUs" class="ContactStart">
+    </section>
+    <section id="ContactUs" class="ContactStart">
         <div>
             <p class="TextoNormal">Interested in this property or ready to see it in person? Send us your request and
                 we'll arrange a visit at your convenience</p>
@@ -43,10 +45,8 @@
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Your Name"
-                            aria-describedby="name-error"
-                            aria-required="true">
-                    <span class="error-msg" id="name-error" role="alert"></span>
+                            placeholder="Your Name">
+                    <span class="error-msg" id="name-error"></span>
                 </div>
 
                 <div class="field">
@@ -55,10 +55,8 @@
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Your Email"
-                            aria-describedby="email-error"
-                            aria-required="true">
-                    <span class="error-msg" id="email-error" role="alert"></span>
+                            placeholder="Your Email">
+                    <span class="error-msg" id="email-error"></span>
                 </div>
 
                 <div class="field">
@@ -66,10 +64,8 @@
                     <input
                             type="date"
                             id="date"
-                            name="date"
-                            aria-describedby="date-error"
-                            aria-required="true">
-                    <span class="error-msg" id="date-error" role="alert"></span>
+                            name="date">
+                    <span class="error-msg" id="date-error"></span>
                 </div>
 
                 <div class="field">
@@ -77,10 +73,8 @@
                     <input
                             type="time"
                             id="time"
-                            name="time"
-                            aria-describedby="time-error"
-                            aria-required="true">
-                    <span class="error-msg" id="time-error" role="alert"></span>
+                            name="time">
+                    <span class="error-msg" id="time-error"></span>
                 </div>
 
                 <div class="field">
@@ -89,16 +83,14 @@
                             id="message"
                             name="message"
                             placeholder="Tell us your preferred date, time, or any questions"
-                            aria-describedby="message-error"
-                            aria-required="true"
                     ></textarea>
-                    <span class="error-msg" id="message-error" role="alert"></span>
+                    <span class="error-msg" id="message-error"></span>
                 </div>
 
                 <button type="submit" id="RequestButton">Request a Visit</button>
             </form>
         </div>
-    </div>
+    </section>
 </main>
 <footer>
     <div>

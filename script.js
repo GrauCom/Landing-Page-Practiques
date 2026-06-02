@@ -29,7 +29,6 @@ function showError(input, message) {
     const errorSpan = document.getElementById(input.id + '-error');
     input.classList.add('invalid');
     input.classList.remove('valid');
-    input.setAttribute('aria-invalid', 'true');
     errorSpan.textContent = message;
 }
 
@@ -38,7 +37,6 @@ function showValid(input) {
     const errorSpan = document.getElementById(input.id + '-error');
     input.classList.remove('invalid');
     input.classList.add('valid');
-    input.setAttribute('aria-invalid', 'false');
     errorSpan.textContent = '';
 }
 
